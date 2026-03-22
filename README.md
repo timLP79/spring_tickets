@@ -1,22 +1,45 @@
 # Spring Tickets
 
-A ticketing system built with Spring Boot and Thymeleaf.  
-This project is currently in early development.
+A helpdesk ticketing system built with Java 21, Spring Boot, Thymeleaf, and PostgreSQL. Currently in early development.
 
-## Features (Planned)
-- Create and assign tickets
-- Track status and due dates
-- Prioritize tasks
-- Filter and search
+---
 
 ## Tech Stack
+
 - Java 21
-- Spring Boot
+- Spring Boot 3.5.0
 - Thymeleaf
+- PostgreSQL
 - Gradle
 
+---
+
+## Planned Features
+
+- Create and assign tickets
+- Track status and due dates
+- Set priority levels
+- Filter and search tickets
+
+---
+
 ## Getting Started
-Clone the repo and run:
+
+### Prerequisites
+
+- Java 21
+- PostgreSQL (connection configuration required)
+
+### Run
 
 ```bash
 ./gradlew bootRun
+```
+
+---
+
+## Contact
+
+- Email: timpalacios@u.boisestate.edu
+- GitHub: [@timLP79](https://github.com/timLP79)
+- LinkedIn: [tim-palacios](https://www.linkedin.com/in/tim-palacios/)
