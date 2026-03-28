@@ -1,25 +1,32 @@
-# Spring Tickets
+# Ticket System
 
-A helpdesk ticketing system built with Java 21, Spring Boot, Thymeleaf, and PostgreSQL. Currently in early development.
+A self-hostable trouble ticket system for small businesses. Built with Java 21, Spring Boot, Thymeleaf, and PostgreSQL. Designed to be deployable as a single instance per client with no vendor lock-in.
 
 ---
 
 ## Tech Stack
 
-- Java 21
-- Spring Boot 3.5.0
-- Thymeleaf
-- PostgreSQL
-- Gradle
+| Layer | Technology |
+|-------|------------|
+| Language | Java 21 |
+| Framework | Spring Boot 3.5.0 |
+| Templating | Thymeleaf |
+| Data Access | Spring Data JPA |
+| Database | PostgreSQL |
+| Migrations | Flyway |
+| Security | Spring Security |
+| Build Tool | Gradle |
 
 ---
 
-## Planned Features
+## Features (Planned)
 
-- Create and assign tickets
-- Track status and due dates
-- Set priority levels
-- Filter and search tickets
+- Create, assign, and track support tickets
+- Role-based access: Admin, Agent, User
+- Department-based ticket routing
+- Ticket prioritization (Low, Medium, High, Urgent)
+- Status tracking (Open, In Progress, On Hold, Resolved, Closed)
+- Comment threads on tickets
 
 ---
 
@@ -28,7 +35,17 @@ A helpdesk ticketing system built with Java 21, Spring Boot, Thymeleaf, and Post
 ### Prerequisites
 
 - Java 21
-- PostgreSQL (connection configuration required)
+- PostgreSQL
+
+### Configuration
+
+The application reads database credentials from environment variables:
+
+```
+DB_URL=jdbc:postgresql://localhost:5432/ticketsystem
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
 
 ### Run
 
@@ -38,8 +55,21 @@ A helpdesk ticketing system built with Java 21, Spring Boot, Thymeleaf, and Post
 
 ---
 
+## Project Structure
+
+```
+com.absolutecode.ticketsystem
+├── config/         # Spring Security, app config
+├── controller/     # HTTP request handling
+├── service/        # Business logic
+├── repository/     # Spring Data JPA interfaces
+├── model/          # JPA entities
+└── exception/      # Custom exceptions
+```
+
+---
+
 ## Contact
 
-- Email: timpalacios@u.boisestate.edu
 - GitHub: [@timLP79](https://github.com/timLP79)
 - LinkedIn: [tim-palacios](https://www.linkedin.com/in/tim-palacios/)
