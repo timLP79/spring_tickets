@@ -1,13 +1,12 @@
-package com.absolutecode.spring_tickets;
+package com.absolutecode.ticketsystem;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringTicketsApplicationTests {
+class TicketSystemApplicationTests {
 
     @Test
     void contextLoads() {
     }
-
 }

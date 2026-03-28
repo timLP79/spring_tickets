@@ -1,12 +1,12 @@
-package com.absolutecode.spring_tickets;
+package com.absolutecode.ticketsystem;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringTicketsApplication {
+public class TicketSystemApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringTicketsApplication.class, args);
+        SpringApplication.run(TicketSystemApplication.class, args);
     }
 }

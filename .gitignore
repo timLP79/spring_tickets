@@ -35,3 +35,16 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Learning notes ###
+LEARNING.md
+
+### Environment and secrets ###
+.env
+.env.*
+
+### Logs ###
+*.log
+
+### Claude Code ###
+.claude/
